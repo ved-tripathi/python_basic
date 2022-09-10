@@ -2,7 +2,7 @@
 import turtle
 
 
-s =turtle.Screen()
+screen =turtle.Screen()
 t = turtle.Turtle()
 # import graph2
 t.hideturtle()
@@ -64,7 +64,7 @@ for i in range (207):  # number of loops depend on line number 70 :
 #    i = i+1           #  for example:                                    
     move.clear()       #__________*****Case I*****_________________________________________|                       
     lift()             #if turtle heads by (0.5 pixels),      |no. of pixels,              |     
-    s.update()    #the number of loops should be (1240)  |is directly proportional to,| 
+    screen.update()    #the number of loops should be (1240)  |is directly proportional to,| 
                        #                                      |speed of the lift           |      
     t.speed(1)         #__________*****Case II****____________|____________________________|
     t.fd(3)            #if pixels heads by (3 pixels), the (loop count = 206.6667)         |
@@ -74,7 +74,6 @@ for i in range (207):  # number of loops depend on line number 70 :
                        
                        #NOTE: if 1240/a is a decimal number, take it's approx.
                        #                             ...As done in CASE II
-
 
 
 
